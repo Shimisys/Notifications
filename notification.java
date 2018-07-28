@@ -68,51 +68,23 @@ private void createNotificationAction(int nId, int icon, String title, String ms
     }
 
 // for PendingIntent we need to craete new activity
-// so i created CustomNoti activity, i dont chage there anything, just build layout 
+// so i created CustomNotifi activity, i dont chage there anything, just build layout 
+// when i click the OK button on the notification i will transfer to new activity (CustomNotifi) 
 
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:layout_margin="16dp">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnScan"
-        android:text="Scan wifi"
-        android:layout_marginTop="10dp"
-        android:textSize="20sp"
-        android:background="#4285f4"
-        android:textColor="#fff"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnStop"
-        android:text="Stop"
-        android:textSize="20sp"
-        android:background="#4285f4"
-        android:layout_marginTop="10dp"
-        android:textColor="#fff"/>
-
-    <android.support.v4.widget.ContentLoadingProgressBar
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/Widget.AppCompat.ProgressBar"
-        android:layout_gravity="center"
-        android:layout_marginTop="2dp"
-        android:id="@+id/proBar"
-        />
-
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/lstView"
-        android:layout_marginTop="5dp"/>
+        android:id="@+id/lblnews"
+        android:text="New!! there is new operator"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#59edfe"/>
 
 
 </LinearLayout>
